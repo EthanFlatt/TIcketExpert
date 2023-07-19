@@ -13,12 +13,13 @@ class Venue(models.Model):
         return self.name
     
 class Event(models.Model):
-    name = models.CharField(max_length = 100)
     performers = models.CharField(max_length = 100)
     venue = models.ForeignKey(Venue, on_delete = models.CASCADE, related_name = 'events')
     date = models.DateField()
     description = models.TextField()
+    admission = models.CharField(max_length = 10)
+    show_start_time = models.CharField(max_length = 10)
     photo_url = models.TextField()
 
     def __str__(self):
-        return self.name
+        return self.performers
