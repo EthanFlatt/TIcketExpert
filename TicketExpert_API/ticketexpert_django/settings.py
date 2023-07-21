@@ -66,8 +66,7 @@ ALLOWED_HOSTS = ['*']
 
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:8000',
-    'http://127.0.0.1:5500',
-    'https://ticketexpert-production.up.railway.app/'
+    'http://127.0.0.1:5500'
 ]
 
 ROOT_URLCONF = 'ticketexpert_django.urls'
@@ -97,10 +96,10 @@ WSGI_APPLICATION = 'ticketexpert_django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ytaaqpbd',
-        'USER': 'ytaaqpbd',
-        'PASSWORD': 'wy9y5_cSSrk1S-n3kgABogoh-PpBcsNj',
-        'HOST': 'hansken.db.elephantsql.com'
+        'NAME': 'ticketexpert',
+        'USER': 'ticketexpertuser',
+        'PASSWORD': 'ticketexpert',
+        'HOST': 'localhost'
     }
 }
 
