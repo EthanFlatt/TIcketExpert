@@ -9,6 +9,7 @@ djangorestframework = "*"
 gunicorn = "*"
 dj-database-url = "*"
 django = "===4.0"
+django-cors-headers = "*"
 
 [dev-packages]
 
