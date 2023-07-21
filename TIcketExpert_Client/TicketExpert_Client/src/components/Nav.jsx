@@ -2,16 +2,14 @@ import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 
 
-export default function Header () {
+const Nav = () => {
 
   return (
-
-  <div className="navBar">
-    <ul>
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/VenueList">Venues</Link></li>
-      <li><Link to="/EventList">Events</Link></li>
-    </ul>
-  </div>
+    <div className="navBar">
+        <Link to="/venues">Venues</Link>
+        <Link to="/events">Events</Link>
+    </div>
   )
 }
+
+export default Nav
