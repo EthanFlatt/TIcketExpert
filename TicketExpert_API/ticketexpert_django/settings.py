@@ -66,7 +66,8 @@ ALLOWED_HOSTS = ['*']
 
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:8000',
-    'http://127.0.0.1:5500'
+    'http://127.0.0.1:5500',
+    'https://ticketexpert-production.up.railway.app/'
 ]
 
 ROOT_URLCONF = 'ticketexpert_django.urls'
