@@ -62,11 +62,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:8000",
-    "http://127.0.0.1:5500",
-]
+ALLOWED_HOSTS = ['*']
 
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:8000',
+    'http://127.0.0.1:5500'
+]
 
 ROOT_URLCONF = 'ticketexpert_django.urls'
 
@@ -95,12 +96,14 @@ WSGI_APPLICATION = 'ticketexpert_django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ticketexpert',
-        'USER': 'ticketexpertuser',
-        'PASSWORD': 'ticketexpert',
-        'HOST': 'localhost'
+        'NAME': 'ytaaqpbd',
+        'USER': 'ytaaqpbd',
+        'PASSWORD': 'wy9y5_cSSrk1S-n3kgABogoh-PpBcsNj',
+        'HOST': 'hansken.db.elephantsql.com'
     }
 }
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
